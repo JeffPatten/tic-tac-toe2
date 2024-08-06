@@ -15,9 +15,11 @@ const Square = (props) => {
     }
   };
 
-  return <div className="square" onClick={handleClick}>
-    {props.squareValue === 'O' ? 'O' : props.squareValue}
-    </div>;
+  return (
+    <div className="square" onClick={handleClick}>
+      {props.squareValue === "O" ? "O" : props.squareValue}
+    </div>
+  );
 };
 
 export default Square;
